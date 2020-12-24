@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
+using Valve.VR.InteractionSystem;
 
 public class shopslotScript : MonoBehaviour
 {
@@ -30,7 +32,7 @@ public class shopslotScript : MonoBehaviour
         }
         
 
-        if (Input.GetKeyDown("i"))
+        if (SteamVR_Actions._default.offshop.GetStateDown(SteamVR_Input_Sources.Any))
         {
             unhookShop();
         }

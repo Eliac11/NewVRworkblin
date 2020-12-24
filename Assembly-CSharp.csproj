@@ -667,6 +667,10 @@
       <Project>{967673D1-9B97-60BE-4081-E8B34723C002}</Project>
       <Name>NavMeshComponentsEditor</Name>
     </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{5D1F2F3E-186D-4D1B-6263-ED6AC70C5257}</Project>
+      <Name>SteamVR_Actions</Name>
+    </ProjectReference>
     <ProjectReference Include="NavMeshComponents.csproj">
       <Project>{BA0F592C-2BBC-8EE4-F379-7DFC3BB411C9}</Project>
       <Name>NavMeshComponents</Name>

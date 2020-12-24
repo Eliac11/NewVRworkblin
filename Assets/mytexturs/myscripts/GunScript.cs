@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
+using Valve.VR.InteractionSystem;
 
 public class GunScript : MonoBehaviour
 {
@@ -43,7 +45,7 @@ public class GunScript : MonoBehaviour
     void Update()
     {
         boltmove();
-        if (Input.GetKey("o"))
+        if (SteamVR_Actions._default.Fire.GetStateDown(SteamVR_Input_Sources.Any))
         {
             if (inhand)
             {
